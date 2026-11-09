@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abandoned But Not Forgotten</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="gl" aria-hidden="true"></canvas>
+<nav aria-label="Places"><a href="#earth">Earth</a><a href="#moon">Moon</a><a href="#mars">Mars</a></nav>
+<div id="tip"></div>
+
+<section class="scene" id="earth">
+  <h1>Abandoned But Not Forgotten</h1>
+  <p class="lede">Ever wondered how we know what the Moon and Mars are really like? Machines we left behind are still telling the story.</p>
+  <div class="row"><a class="btn" href="#moon">Fly to the Moon</a></div>
+</section>
+<section class="scene" id="moon" data-p="1">
+  <h2>The Moon</h2>
+  <p class="lede">Astronauts left tools here over 50 years ago. Some still work.</p>
+  <div class="row chips"></div>
+  <div class="row"><button class="btn rot">Rotate the Moon</button></div>
+  <p class="hint">Click a floating tool, or pick one above, to look at it from every side.</p>
+</section>
+<section class="scene" id="mars" data-p="2">
+  <h2>Mars</h2>
+  <p class="lede">Robot explorers landed and rolled here. Turn the planet to meet more of them.</p>
+  <div class="row chips"></div>
+  <div class="row"><button class="btn rot">Rotate Mars</button></div>
+  <p class="hint">Click a floating robot, or pick one above.</p>
+</section>
+<p class="credit">Draft by Shelby. Planet textures and instrument models are simplified illustrations generated in code, not exact NASA replicas. Check facts against NASA mission pages before publishing.</p>
+
+<div id="modal" role="dialog" aria-modal="true" aria-labelledby="mt">
+  <div class="card">
+    <button class="x" aria-label="Close">✕</button>
+    <div class="view" id="view"><canvas id="mc"></canvas><span>Drag to turn it. Scroll to zoom.</span></div>
+    <div class="info"><h3 id="mt"></h3><div class="badge" id="mb"></div>
+      <h4>What is it?</h4><p id="m1"></p><h4>Why did we send it?</h4><p id="m2"></p><h4>Cool fact</h4><p id="m3"></p></div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

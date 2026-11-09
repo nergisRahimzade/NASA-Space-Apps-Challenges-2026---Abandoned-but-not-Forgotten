@@ -1,0 +1,149 @@
+[
+  {
+    "id": "surveyor-3",
+    "name": "Surveyor 3 Lander",
+    "mission": "Surveyor 3",
+    "body": "Moon",
+    "date": "1967-04-20",
+    "dateEvent": "landing (UTC)",
+    "location": "Ocean of Storms, Moon",
+    "coordinates": null,
+    "goal": "To test if the Moon's dust was firm enough to land on and to send pictures back to Earth.",
+    "payload": "TV camera and a scoop arm for digging soil",
+    "story": "A robot lander with a TV camera, a scoop arm, and three legs, sent before any astronaut landed.",
+    "coolFact": "Two Apollo 12 astronauts walked right up to it in 1969 and took its camera and scoop home to study how space affects machines.",
+    "status": "Structure still on the Moon",
+    "modelFile": "models/surveyor-3.glb",
+    "sources": [
+      "https://science.nasa.gov/mission/surveyor-3/",
+      "https://nssdc.gsfc.nasa.gov/planetary/lunar/surveyor.html"
+    ],
+    "verified": false
+  },
+  {
+    "id": "eagle-descent-stage",
+    "name": "Apollo 11 Eagle Descent Stage",
+    "mission": "Apollo 11",
+    "body": "Moon",
+    "date": "1969-07-20",
+    "dateEvent": "landing (UTC)",
+    "location": "Sea of Tranquility (Tranquility Base), Moon",
+    "coordinates": null,
+    "goal": "To land the first people on the Moon safely and give them a platform to launch home from.",
+    "payload": "Descent engine, fuel tanks, landing legs, and equipment for the astronauts' moonwalk",
+    "story": "Eagle was the two-part lander that carried Neil Armstrong and Buzz Aldrin to the Moon. The bottom half, the descent stage, stayed behind when they flew home.",
+    "coolFact": "It is still at Tranquility Base, where humans first set foot on another world.",
+    "status": "Left on the Moon",
+    "modelFile": "models/eagle-descent-stage.glb",
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html",
+      "https://science.nasa.gov/resource/apollo-11-landing-site-from-dawn-to-dusk/"
+    ],
+    "verified": false
+  },
+  {
+    "id": "lunar-rover",
+    "name": "Apollo 15 Lunar Roving Vehicle",
+    "mission": "Apollo 15",
+    "body": "Moon",
+    "date": "1971-07-31",
+    "dateEvent": "first lunar deployment and use",
+    "location": "Hadley-Apennine region, Moon",
+    "coordinates": null,
+    "goal": "To let astronauts travel far from their lander and carry tools and rocks back safely.",
+    "payload": "Two astronauts, tools, a TV camera, and moon rock samples",
+    "story": "The Lunar Roving Vehicle: a battery-powered electric car that folded up to fit inside the lander.",
+    "coolFact": "Apollo 15's crew drove it about 28 km (17 miles). Three of these moon buggies are still parked up there.",
+    "status": "Parked on the Moon",
+    "modelFile": "models/lunar-rover.glb",
+    "sources": [
+      "https://www.nasa.gov/centers-and-facilities/marshall/the-marshall-star-288/",
+      "https://www.nasa.gov/marshall-at-65-the-foundational-1960s/"
+    ],
+    "verified": false
+  },
+  {
+    "id": "viking-1",
+    "name": "Viking 1 Lander",
+    "mission": "Viking 1",
+    "body": "Mars",
+    "date": "1976-07-20",
+    "dateEvent": "landing (UTC)",
+    "location": "Chryse Planitia, Mars",
+    "coordinates": null,
+    "goal": "To take the first long look at Mars's surface and test the soil for signs of tiny living things.",
+    "payload": "Cameras, weather station, soil-sampling arm, and life-detection experiments",
+    "story": "A robot lander that sat in one spot on Mars with cameras, a weather station, and a scoop arm.",
+    "coolFact": "It worked for over six years, much longer than the 90 days planned, sending thousands of pictures.",
+    "status": "Silent since 1982",
+    "modelFile": "models/viking-1.glb",
+    "sources": [
+      "https://science.nasa.gov/mission/viking-1/",
+      "https://nssdc.gsfc.nasa.gov/planetary/viking.html"
+    ],
+    "verified": false
+  },
+  {
+    "id": "sojourner",
+    "name": "Sojourner Rover",
+    "mission": "Mars Pathfinder",
+    "body": "Mars",
+    "date": "1997-07-04",
+    "dateEvent": "arrival on Mars aboard Pathfinder (UTC)",
+    "location": "Ares Vallis, Mars",
+    "coordinates": null,
+    "goal": "To test if a small rover could drive on Mars and check what the rocks are made of.",
+    "payload": "Cameras and an alpha proton X-ray spectrometer for studying rocks",
+    "story": "The first rover to roll on Mars. It was about the size of a microwave oven.",
+    "coolFact": "It was built to work for 7 days but kept going for about 3 months!",
+    "status": "Silent since 1997",
+    "modelFile": "models/sojourner.glb",
+    "sources": [
+      "https://science.nasa.gov/mission/mars-pathfinder/",
+      "https://www.nasa.gov/image-article/july-4-1997-sojourner-arrives-red-planet/"
+    ],
+    "verified": false
+  },
+  {
+    "id": "spirit",
+    "name": "Spirit Rover",
+    "mission": "Mars Exploration Rover (MER-A)",
+    "body": "Mars",
+    "date": "2004-01-04",
+    "dateEvent": "landing (UTC)",
+    "location": "Gusev Crater, Mars",
+    "coordinates": null,
+    "goal": "To look for clues that Mars once had water, by studying rocks and soil.",
+    "payload": "Panoramic camera, rock-grinding tool, and science instruments on its arm",
+    "story": "A golf-cart-sized rover with cameras, a rock-grinding tool, and science instruments on its arm.",
+    "coolFact": "Planned for 90 days, it worked for about 6 years. Its wheels dug up bright soil that hinted at hot water long ago.",
+    "status": "Silent since 2010",
+    "modelFile": "models/spirit.glb",
+    "sources": [
+      "https://science.nasa.gov/mission/mer-spirit/",
+      "https://science.nasa.gov/3d-resources/mars-exploration-rover-spirit-and-opportunity/"
+    ],
+    "verified": false
+  },
+  {
+    "id": "opportunity",
+    "name": "Opportunity Rover",
+    "mission": "Mars Exploration Rover (MER-B)",
+    "body": "Mars",
+    "date": "2004-01-25",
+    "dateEvent": "landing (UTC)",
+    "location": "Meridiani Planum, Mars",
+    "coordinates": null,
+    "goal": "To hunt for signs that water once flowed on Mars and might have helped life start.",
+    "payload": "Panoramic camera, rock-grinding tool, and science instruments on its arm",
+    "story": "Spirit's twin rover. It landed on the other side of Mars.",
+    "coolFact": "It was planned for 90 days and lasted almost 15 years, driving about 45 km, farther than a marathon!",
+    "status": "Silent since 2018",
+    "modelFile": "models/opportunity.glb",
+    "sources": [
+      "https://science.nasa.gov/mission/mer-opportunity/",
+      "https://science.nasa.gov/3d-resources/mars-exploration-rover-spirit-and-opportunity/"
+    ],
+    "verified": false
+  }
+]
