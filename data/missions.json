@@ -1,0 +1,174 @@
+[
+  {
+    "id": "surveyor-3",
+    "name": "Surveyor 3 Lander: Remaining Structure",
+    "mission": "Surveyor 3",
+    "body": "Moon",
+    "date": "1967-04-20",
+    "dateEvent": "landing (UTC)",
+    "location": "Oceanus Procellarum (Ocean of Storms), Moon — landing site",
+    "coordinates": null,
+    "goal": "Test soft landing and study the lunar ground before astronauts arrived.",
+    "payload": "Originally a TV camera and soil-sampling scoop; Apollo 12 returned the camera and scoop to Earth.",
+    "story": "This robot explored the Moon before astronauts arrived. Its camera showed the landscape, while its scoop tested the soil. Apollo 12 astronauts later visited it and brought some parts home. The remaining lander structure stayed on the Moon.",
+    "coolFact": "Apollo 12 astronauts visited Surveyor 3 in 1969 and returned its camera and scoop for study.",
+    "status": "Inactive; remaining structure on the Moon",
+    "modelFile": null,
+    "sources": [
+      "https://science.nasa.gov/mission/surveyor-3/",
+      "https://nssdc.gsfc.nasa.gov/planetary/lunar/surveyor.html"
+    ],
+    "verified": false
+  },
+  {
+    "id": "eagle-descent-stage",
+    "name": "Apollo 11 Eagle Descent Stage",
+    "mission": "Apollo 11",
+    "body": "Moon",
+    "date": "1969-07-20",
+    "dateEvent": "landing (UTC)",
+    "location": "Tranquility Base, Sea of Tranquility, Moon — landing site",
+    "coordinates": {
+      "lat": 0.67416,
+      "lon": 23.47314
+    },
+    "goal": "Help the first Moon walkers land safely and support their work on the surface.",
+    "payload": "Landing engine, propellant tanks, landing legs, and stored equipment for lunar exploration.",
+    "story": "Eagle carried Neil Armstrong and Buzz Aldrin to the Moon. Its lower section helped them land and stayed behind when the upper section lifted off. This descent stage remains at Tranquility Base.",
+    "coolFact": "NASA's Lunar Reconnaissance Orbiter has photographed the descent stage and nearby astronaut tracks.",
+    "status": "Descent stage left on the Moon",
+    "modelFile": null,
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html",
+      "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "https://science.nasa.gov/resource/apollo-11-landing-site-from-dawn-to-dusk/",
+      "https://www.nasa.gov/wp-content/uploads/static/history/alsj/01_Introduction_ppi-iv_%26_1-7.pdf"
+    ],
+    "verified": true
+  },
+  {
+    "id": "lunar-rover",
+    "name": "Apollo 15 Lunar Roving Vehicle",
+    "mission": "Apollo 15",
+    "body": "Moon",
+    "date": "1971-07-31",
+    "dateEvent": "first lunar deployment and use",
+    "location": "Hadley-Apennine, Moon — arrival site aboard lunar module Falcon, not final parking position",
+    "coordinates": {
+      "lat": 26.13239,
+      "lon": 3.6333
+    },
+    "goal": "Help astronauts explore farther from their lander and carry equipment across the Moon.",
+    "payload": "Two crew seats, a communications relay unit and a TV camera.",
+    "story": "This battery-powered rover helped Apollo 15 astronauts explore beyond walking distance. It traveled to the Moon folded against the lunar module, then unfolded for driving. The crew left it on the Moon when they departed.",
+    "coolFact": "Apollo 15's crew drove the rover about 28 kilometers during three trips.",
+    "status": "Left parked on the Moon",
+    "modelFile": null,
+    "sources": [
+      "https://www.nasa.gov/centers-and-facilities/marshall/the-marshall-star-288/",
+      "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html",
+      "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "https://www.nasa.gov/wp-content/uploads/static/history/SP-4029/Apollo_15a_Summary.htm"
+    ],
+    "verified": true
+  },
+  {
+    "id": "viking-1",
+    "name": "Viking 1 Lander",
+    "mission": "Viking 1",
+    "body": "Mars",
+    "date": "1976-07-20",
+    "dateEvent": "landing (UTC)",
+    "location": "Chryse Planitia, Mars — landing site",
+    "coordinates": {
+      "lat": 22.27,
+      "lon": -47.95
+    },
+    "goal": "Study the Martian ground and weather, and test soil for evidence of life.",
+    "payload": "Surface cameras, weather sensors, a sampling arm, biology and chemistry experiments, and a seismometer that did not operate.",
+    "story": "Viking 1 stayed in one place on Mars and studied its surroundings. It photographed the landscape, measured the weather, and tested soil. Its experiments did not provide a definitive answer about life on Mars.",
+    "coolFact": "The lander kept working for more than six years.",
+    "status": "Inactive; last contact in 1982",
+    "modelFile": null,
+    "sources": [
+      "https://science.nasa.gov/mission/viking-1/",
+      "https://nssdc.gsfc.nasa.gov/planetary/viking.html"
+    ],
+    "verified": true
+  },
+  {
+    "id": "sojourner",
+    "name": "Sojourner Rover",
+    "mission": "Mars Pathfinder",
+    "body": "Mars",
+    "date": "1997-07-04",
+    "dateEvent": "arrival on Mars aboard Pathfinder (UTC)",
+    "location": "Ares Vallis, Mars — arrival site aboard Pathfinder, not final rover position",
+    "coordinates": {
+      "lat": 19.33,
+      "lon": -33.55
+    },
+    "goal": "Test driving on Mars and study what rocks and soil are made of.",
+    "payload": "Three cameras and an alpha proton X-ray spectrometer for studying rocks and soil.",
+    "story": "Sojourner arrived on Mars aboard Pathfinder. The small robot drove away from its lander to photograph nearby ground and study rocks. It helped show how a moving robot could explore another planet.",
+    "coolFact": "Sojourner was NASA's first Mars rover.",
+    "status": "Inactive; communications ended in 1997",
+    "modelFile": null,
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/planetary/mesur.html",
+      "https://pds.nasa.gov/data/mpfr-m-apxs-2-edr-v1.0/mprv_0001/document/rcinst.htm",
+      "https://science.nasa.gov/mission/mars-pathfinder/"
+    ],
+    "verified": true
+  },
+  {
+    "id": "spirit",
+    "name": "Spirit Rover",
+    "mission": "Mars Exploration Rover (MER-A)",
+    "body": "Mars",
+    "date": "2004-01-04",
+    "dateEvent": "landing (UTC)",
+    "location": "Gusev Crater, Mars — landing site, not final rover position",
+    "coordinates": {
+      "lat": -14.572,
+      "lon": 175.478
+    },
+    "goal": "Study rocks and soil for clues that Mars once had water.",
+    "payload": "Panoramic cameras, spectrometers, a microscopic imager, a rock abrasion tool and magnets for collecting dust.",
+    "story": "Spirit drove across Mars to study rocks and soil. Its cameras and tools helped scientists investigate places where water may once have changed the ground. Its landing site marks the start of its journey, not where it finally stopped.",
+    "coolFact": "Spirit explored Mars for more than six years.",
+    "status": "Inactive; last contact in 2010",
+    "modelFile": null,
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2003-027A",
+      "https://science.nasa.gov/mission/mer-spirit/",
+      "https://science.nasa.gov/3d-resources/mars-exploration-rover-spirit-and-opportunity/"
+    ],
+    "verified": true
+  },
+  {
+    "id": "opportunity",
+    "name": "Opportunity Rover",
+    "mission": "Mars Exploration Rover (MER-B)",
+    "body": "Mars",
+    "date": "2004-01-25",
+    "dateEvent": "landing (UTC)",
+    "location": "Eagle Crater, Meridiani Planum, Mars — landing site, not final rover position",
+    "coordinates": {
+      "lat": -1.946,
+      "lon": -5.527
+    },
+    "goal": "Study rocks and soil for evidence of past water and environments that might once have supported life.",
+    "payload": "Panoramic cameras, spectrometers, a microscopic imager, a rock abrasion tool and magnets for collecting dust.",
+    "story": "Opportunity was Spirit's twin. It landed inside a small crater and studied rocks for clues about ancient water. It later drove far beyond its landing site, exploring Mars for almost fifteen years.",
+    "coolFact": "Opportunity drove about 45 kilometers, farther than a marathon.",
+    "status": "Inactive; last contact in 2018",
+    "modelFile": null,
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2003-032A",
+      "https://science.nasa.gov/mission/mer-opportunity/",
+      "https://science.nasa.gov/3d-resources/mars-exploration-rover-spirit-and-opportunity/"
+    ],
+    "verified": true
+  }
+]

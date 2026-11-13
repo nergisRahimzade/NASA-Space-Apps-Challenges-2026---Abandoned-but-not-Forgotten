@@ -1,0 +1,77 @@
+{
+  "ticket": "ANF-D04-DAT",
+  "checkedOn": "2026-11-10",
+  "schemaValidation": {
+    "status": "passed",
+    "validator": "Ajv 8.20.0",
+    "strict": true,
+    "formats": [
+      "date (calendar date)",
+      "uri (absolute URL)"
+    ]
+  },
+  "independentReview": {
+    "status": "passed",
+    "validator": "Python jsonschema Draft7Validator with FormatChecker",
+    "positiveAndNegativeProbes": 15,
+    "scope": [
+      "null model accepted on verified record",
+      "unknown historical field rejected on verified record",
+      "empty sources rejected on verified record",
+      "invalid calendar date rejected",
+      "invalid coordinate rejected",
+      "nullable story/coolFact/status do not control historical verification"
+    ]
+  },
+  "dataset": {
+    "records": 7,
+    "fieldsPerRecord": 16,
+    "moon": 3,
+    "mars": 4,
+    "verifiedHistoricalFacts": 6,
+    "unverifiedIds": [
+      "surveyor-3"
+    ],
+    "unknownCoordinatesIds": [
+      "surveyor-3"
+    ],
+    "nullModelFiles": 7,
+    "storyWordCounts": {
+      "surveyor-3": 38,
+      "eagle-descent-stage": 32,
+      "lunar-rover": 35,
+      "viking-1": 34,
+      "sojourner": 32,
+      "spirit": 39,
+      "opportunity": 32
+    },
+    "selectedIdsChecked": true,
+    "sourceUrlsChecked": true
+  },
+  "sha256": {
+    "data/missions.json": "4f43422350f641e3e7afc472643157bd35ed499f08236628528c44a5d8b1b45a",
+    "data/missions.schema.json": "f5def95c1fbd76dbdd52962580055515e797c74784fc27f6b3d1cec820a5965c"
+  },
+  "websiteChecks": {
+    "node": "v24.22.1",
+    "lint": {
+      "status": "passed",
+      "command": "node node_modules/eslint/bin/eslint.js ."
+    },
+    "typecheck": {
+      "status": "passed",
+      "command": "node node_modules/typescript/bin/tsc --noEmit"
+    },
+    "build": {
+      "status": "blocked_by_environment",
+      "command": "node node_modules/next/dist/bin/next build",
+      "detail": "Initial attempt could not fetch Google Fonts. Approved network retry reached CSS compilation, then Turbopack failed to create a subprocess/listen on a local port (Operation not permitted). Production build did not pass."
+    }
+  },
+  "limitations": [
+    "Schema validation cannot establish historical truth; source review is documented in day4-handoff.md.",
+    "Coordinates are sourced landing/arrival references with frame caveats; they are not final rover positions.",
+    "No model has been verified or downloaded; Day 5 records sizes and licenses in models.md.",
+    "Frontend placeholder and unknown-coordinate handling are not implemented by this data PR."
+  ]
+}

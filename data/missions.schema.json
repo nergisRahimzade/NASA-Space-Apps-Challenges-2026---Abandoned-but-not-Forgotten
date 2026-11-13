@@ -1,0 +1,204 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Abandoned But Not Forgotten: missions",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "mission",
+      "body",
+      "date",
+      "location",
+      "goal",
+      "payload",
+      "story",
+      "coolFact",
+      "status",
+      "modelFile",
+      "sources",
+      "verified",
+      "dateEvent",
+      "coordinates"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "mission": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "body": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "enum": [
+          "Moon",
+          "Mars",
+          "Deep space",
+          null
+        ]
+      },
+      "date": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+        "description": "Date of the event named in dateEvent, YYYY-MM-DD (UTC)",
+        "format": "date"
+      },
+      "location": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Landing or arrival site. For the Apollo rover this is where it arrived on the lunar module, not where it was parked."
+      },
+      "goal": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Why it was sent, in kid-friendly words"
+      },
+      "payload": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Main instruments or equipment it carried"
+      },
+      "story": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "What it is, kid-friendly, 60 words max"
+      },
+      "coolFact": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "status": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "modelFile": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "pattern": "^models/[a-z0-9-]+\\.glb$",
+        "description": "Use null until Day 5 model checks; the frontend shows a placeholder shape. Once available, use models/<id>.glb relative to public/. Record size and license separately in models.md. Model availability does not affect verified."
+      },
+      "sources": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "verified": {
+        "type": "boolean",
+        "description": "DAT has checked date, location, coordinates, goal and payload against the cited sources, using dateEvent as context. This flag does not cover model availability, file size or license; those are tracked separately in models.md on Day 5. Source verification does not imply a shared coordinate frame or a final resting position."
+      },
+      "dateEvent": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "What the date means, e.g. 'landing (UTC)'. Not the same as mission end."
+      },
+      "coordinates": {
+        "oneOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "object",
+            "required": [
+              "lat",
+              "lon"
+            ],
+            "properties": {
+              "lat": {
+                "type": "number",
+                "minimum": -90,
+                "maximum": 90
+              },
+              "lon": {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "description": "Decimal degrees of the landing site (south and west negative). Use null until DAT confirms it from NSSDCA."
+      }
+    },
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "verified": {
+              "const": true
+            }
+          },
+          "required": [
+            "verified"
+          ]
+        },
+        "then": {
+          "properties": {
+            "date": {
+              "type": "string",
+              "minLength": 1
+            },
+            "location": {
+              "type": "string",
+              "minLength": 1
+            },
+            "coordinates": {
+              "type": "object"
+            },
+            "goal": {
+              "type": "string",
+              "minLength": 1
+            },
+            "payload": {
+              "type": "string",
+              "minLength": 1
+            },
+            "dateEvent": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sources": {
+              "minItems": 1,
+              "type": "array"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "description": "Keep every listed field present. Unknown descriptive values and coordinates use null; no sources uses []. id and name stay required strings. verified covers sourced historical facts only, independently of modelFile. Enable date and URI format validation in the validator."
+}
